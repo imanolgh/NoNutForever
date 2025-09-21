@@ -11,6 +11,21 @@ This is a monorepo containing a "No Nut Forever" application with two main compo
 
 ## Development Commands
 
+### Universal Developer Commands
+Use these custom Claude commands that work with both frontend and backend:
+
+**Custom Claude commands:**
+```bash
+/format    # Format all backend and frontend code
+/check     # Check code quality and run tests
+```
+
+**Alternative batch scripts (from project root):**
+```bash
+scripts\format.bat    # Format all backend and frontend code
+scripts\check.bat     # Check code quality and run tests
+```
+
 ### Backend (Laravel API)
 Navigate to `backend/nonutforever-api/` for all backend operations:
 
@@ -90,10 +105,13 @@ npm run web      # Start web version
 ## Development Workflow
 
 1. **Backend development**: Use Laravel Boost MCP tools when available, follow Laravel 12 conventions
-2. **Code style**: Always run `vendor/bin/pint --dirty` before finalizing backend changes
-3. **Testing**: Run specific tests after changes, then full suite if needed
-4. **Database**: Use Eloquent models and relationships, avoid raw queries
-5. **Environment**: Backend uses `.env` file, check `.env.example` for required variables
+2. **Code style**: Run `/format` after making any code changes to ensure consistent formatting
+3. **Quality checks**: Run `/check` after making any code changes to verify compilation and run tests
+4. **Testing**: Run specific tests after changes, then full suite if needed
+5. **Database**: Use Eloquent models and relationships, avoid raw queries
+6. **Environment**: Backend uses `.env` file, check `.env.example` for required variables
+
+**IMPORTANT**: Claude will automatically run `/format` and `/check` after making any code changes to ensure quality.
 
 ## Important Notes
 

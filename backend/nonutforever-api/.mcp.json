@@ -6,6 +6,25 @@
                 "artisan",
                 "boost:mcp"
             ]
+        },
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp"
+            ]
+        },
+        "react-native-debugger": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@twodoorsdev/react-native-debugger-mcp"
+            ]
+        },
+        "mobile-mcp": {
+            "command": "npx",
+            "args": ["mobile-mcp"],
+            "cwd": "../frontend/nonutforever-reactnative"
         }
     }
 }

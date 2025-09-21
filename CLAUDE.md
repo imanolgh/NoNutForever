@@ -104,12 +104,13 @@ npm run web      # Start web version
 
 ## Development Workflow
 
-1. **Backend development**: Use Laravel Boost MCP tools when available, follow Laravel 12 conventions
-2. **Code style**: Run `/format` after making any code changes to ensure consistent formatting
-3. **Quality checks**: Run `/check` after making any code changes to verify compilation and run tests
-4. **Testing**: Run specific tests after changes, then full suite if needed
-5. **Database**: Use Eloquent models and relationships, avoid raw queries
-6. **Environment**: Backend uses `.env` file, check `.env.example` for required variables
+1. **Documentation lookup**: ALWAYS use context7 MCP when generating code for any part of the tech stack (Laravel 12, React Native 0.81.4, Expo SDK 54.0.9, any imported packages, or any 3rd party libraries or APIs) to get current, version-specific documentation and examples
+2. **Backend development**: Use Laravel Boost MCP tools when available, follow Laravel 12 conventions
+3. **Code style**: Run `/format` after making any code changes to ensure consistent formatting
+4. **Quality checks**: Run `/check` after making any code changes to verify compilation and run tests
+5. **Testing**: Run specific tests after changes, then full suite if needed
+6. **Database**: Use Eloquent models and relationships, avoid raw queries
+7. **Environment**: Backend uses `.env` file, check `.env.example` for required variables
 
 **IMPORTANT**: Claude will automatically run `/format` and `/check` after making any code changes to ensure quality.
 
